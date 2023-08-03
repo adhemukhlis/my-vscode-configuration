@@ -1,34 +1,55 @@
 {
-	"Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');", "$2"
-		],
-		"description": "Log output to console"
-	},
-	"React Component": {
-		"prefix": "?react-class",
-		"body": ["import React, { Component } from 'react';\nclass ${1:name} extends Component {\n\trender( ) {\n\t\treturn (\n\t\t\t<div>$2</div>\n\t\t)\n\t}\n}\nexport default ${1:name};"],
-		"description": "stateful component"
-	},
-	"Export Const": {
-		"prefix": "?export-const",
-		"body": ["export const ${1:name} = {\n\t$2\n}"],
-		"description": "export const"
-	},
-	"Import Module": {
-		"prefix": "?import-o",
-		"body": ["import { $2 } from '$1'"],
-		"description": "import object"
-	},
-	"Get String Static": {
-		"prefix": "?strs",
-		"body": ["window.str.s."],
-		"description": "Get String Static"
-	},
-	"Get String Dynamic": {
-		"prefix": "?strd",
-		"body": ["window.str.d."],
-		"description": "Get String Dynamic"
-	}
+  "React Functional Component": {
+    "prefix": "--rf",
+    "body": [
+      "import React from 'react';",
+      "const $1 = () => {",
+      "\treturn (",
+      "\t\t<div></div>",
+      "\t);",
+      "};",
+      "export default $1;"
+    ],
+    "description": "React Functional Component"
+  },
+  "Arrow Function": {
+    "prefix": "--afn",
+    "body": ["const $1 = () => {", "\treturn (", "\t\t$2", "\t)", "}"],
+    "description": "RArrow Function"
+  },
+  "Import Destructuring": {
+    "prefix": "--impd",
+    "body": ["import {${2:element}} from '${1:module}';"],
+    "description": "Import Destructuring"
+  },
+  "useState": {
+    "prefix": "--uses",
+    "body": ["const [$1,set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
+    "description": "useState"
+  },
+  "console.log": {
+    "prefix": "--conlo",
+    "body": ["console.log($1)"],
+    "description": "console.log"
+  },
+  "console.info": {
+    "prefix": "--conin",
+    "body": ["console.info($1)"],
+    "description": "console.info"
+  },
+  "console.warn": {
+    "prefix": "--conwar",
+    "body": ["console.warn($1)"],
+    "description": "console.warn"
+  },
+  "console.error": {
+    "prefix": "--conerr",
+    "body": ["console.error(error$1)"],
+    "description": "console.error"
+  },
+  "JSON.stringify": {
+    "prefix": "--jsostr",
+    "body": ["JSON.stringify($1)"],
+    "description": "JSON.stringify"
+  }
 }
