@@ -73,6 +73,7 @@
 	"editor.scrollbar.verticalScrollbarSize": 8,
 	"editor.smoothScrolling": true,
 	"editor.stablePeek": true,
+	"editor.stickyScroll.enabled": false,
 	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
@@ -225,7 +226,7 @@
 	"vscodeGoogleTranslate.preferredLanguage": "English",
 	"window.autoDetectHighContrast": false,
 	"window.menuBarVisibility": "toggle",
-	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+	"window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
 	"window.titleBarStyle": "custom",
 	"window.titleSeparator": " 🙈 ",
 	"workbench.colorTheme": "Palenight (Mild Contrast)",
