@@ -25,15 +25,7 @@
 		}
 	},
 	"chat.commandCenter.enabled": false,
-	"compareFolders.excludeFilter": [
-		"**/node_modules",
-		"**/dist",
-		"**/.next",
-		"**/.svn",
-		"**/.git",
-		"**/package-lock.json",
-		"**/yarn.lock"
-	],
+	"compareFolders.excludeFilter": ["**/node_modules", "**/dist", "**/.next", "**/.svn", "**/.git", "**/package-lock.json", "**/yarn.lock"],
 	"compareFolders.ignoreEmptyLines": true,
 	"diffEditor.codeLens": true,
 	"diffEditor.experimental.useVersion2": true,
@@ -68,7 +60,6 @@
 		"strings": true
 	},
 	"editor.renderControlCharacters": false,
-	"editor.renderFinalNewline": "dimmed",
 	"editor.renderWhitespace": "boundary",
 	"editor.scrollbar.verticalScrollbarSize": 8,
 	"editor.smoothScrolling": true,
@@ -78,27 +69,13 @@
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
-				"scope": [
-					"comment",
-					"entity.name.type.class",
-					"keyword",
-					"constant",
-					"storage.modifier",
-					"storage.type.class.js"
-				],
+				"scope": ["comment", "entity.name.type.class", "keyword", "constant", "storage.modifier", "storage.type.class.js"],
 				"settings": {
 					"fontStyle": "italic"
 				}
 			},
 			{
-				"scope": [
-					"invalid",
-					"keyword.operator",
-					"constant.numeric.css",
-					"keyword.other.unit.px.css",
-					"constant.numeric.decimal.js",
-					"constant.numeric.json"
-				],
+				"scope": ["invalid", "keyword.operator", "constant.numeric.css", "keyword.other.unit.px.css", "constant.numeric.decimal.js", "constant.numeric.json"],
 				"settings": {
 					"fontStyle": ""
 				}
@@ -149,16 +126,7 @@
 	},
 	"security.workspace.trust.banner": "always",
 	"telemetry.telemetryLevel": "off",
-	"todo-tree.general.tags": [
-		"DOC",
-		"EXPERIMENT",
-		"USED",
-		"UNUSED",
-		"BUG",
-		"NOTE",
-		"FIXME",
-		"TODO"
-	],
+	"todo-tree.general.tags": ["DOC", "EXPERIMENT", "USED", "UNUSED", "BUG", "NOTE", "<+>", "FIXME", "TODO"],
 	"todo-tree.highlights.customHighlight": {
 		"DOC": {
 			"icon": "info",
@@ -198,6 +166,12 @@
 			"iconColour": "aquamarine",
 			"foreground": "black"
 		},
+		"<+>": {
+			"icon": "info",
+			"type": "whole-line",
+			"iconColour": "#FFFFFF90",
+			"foreground": "black"
+		},
 		"BUG": {
 			"icon": "bug",
 			"type": "line",
@@ -230,6 +204,7 @@
 	"window.titleBarStyle": "custom",
 	"window.titleSeparator": " 🙈 ",
 	"workbench.colorTheme": "Palenight (Mild Contrast)",
+	"security.allowedUNCHosts": ["wsl.localhost"],
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.scrollToSwitchTabs": true,
@@ -242,5 +217,29 @@
 	"workbench.reduceMotion": "off",
 	"workbench.startupEditor": "none",
 	"workbench.tips.enabled": false,
-	"workbench.tree.indent": 16
+	"workbench.tree.indent": 16,
+	"[snippets]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"gitlens.defaultGravatarsStyle": "monsterid",
+	"explorer.compactFolders": true,
+	"extensions.autoUpdate": false,
+	"extensions.autoCheckUpdates": true,
+	"workbench.enableExperiments": false,
+	"editor.codeLens": true,
+	"extensions.ignoreRecommendations": true,
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.editor.autoLockGroups": {
+		"workbench.editor.processExplorer": false,
+		"mainThreadWebview-simpleBrowser.view": false,
+		"mainThreadWebview-browserPreview": false,
+		"terminalEditor": false,
+		"workbench.editor.chatSession": false
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact"
+	},
+	"editor.autoClosingDelete": "always",
+	"editor.experimental.asyncTokenization": false
 }
